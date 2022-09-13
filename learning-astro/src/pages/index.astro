@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import First from "../components/First.astro";
+
+const name: string = "Durwankur";
+const visible: boolean = true;
+const CustomElem = "div";
+const items = ["Dog", "Cat", "Platypus"];
+---
+
+<Layout title="Welcome to Astro.">
+  <h2 class="red">There There mate</h2>
+
+  <h5>My name is {name}</h5>
+  <h5>I am {32 - 12} years old</h5>
+
+  {visible && <CustomElem>It is now visible</CustomElem>}
+
+  {
+    items.map((item) => (
+      <>
+        <ul>
+          <li>Red {item}</li>
+          <li>Green {item}</li>
+          <li>Blue {item}</li>
+        </ul>
+      </>
+    ))
+  }
+
+  <First greetings="Howdy" name="Durwankur" />
+</Layout>
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: #5cdb95;
+    color: #05386b;
+    font-size: 1.6rem;
+  }
+</style>

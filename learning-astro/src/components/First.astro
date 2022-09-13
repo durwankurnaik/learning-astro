@@ -1,0 +1,12 @@
+---
+export interface Props {
+  name: string;
+  greetings?: string;
+}
+
+const { greetings = "Welcome", name } = Astro.props;
+---
+
+<div>
+  {greetings} to the world of Astro, {name}
+</div>
