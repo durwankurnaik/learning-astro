@@ -1,0 +1,79 @@
+---
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Navbar />
+<Layout title="See my work">
+  <main>
+    <h3>Welcome to this holy place</h3>
+    <span>Here I work and pray to my coding god whose name is null</span>
+    <span>Some of my projects are:</span>
+
+    <div>
+      <li>
+        <a href="https://sparrxw.netlify.app/" target="_blank">Portfolio Website</a> - Full-stack portfolio
+        site made using React and Sanity
+      </li>
+      <li>
+        <a href="https://restaurant-landingpage.web.app/" target="_blank">Gericht Restaurant Landing Page</a> - Front-end
+        project made using React and sass
+      </li>
+      <li>
+        <a href="https://modern-ui-project.web.app/" target="_blank">OpenGPT 3 Landing page</a> - Front-end project
+        made using React and sass
+      </li>
+      <li>
+        <a href="https://covid-19-tracker-12c1f.web.app/" target="_blank">Covid-19 tracker</a> - Front-end site made using
+        React and used third party APIs
+      </li>
+      <li>
+        <a href="#">iNotebook</a> - Notetaking app made using MERN
+        stack
+      </li>
+      <li>
+        <a href="#">Florange Fashions</a> - Full stack e-commerce
+        app made using MERN stack
+      </li>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  body {
+    background-color: #5cdb95;
+    color: #05386b;
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-family: "Lato", sans-serif;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    font-size: 4rem;
+  }
+  h3 {
+    margin: 3rem 0;
+  }
+  span {
+    font-size: 1.8rem;
+    margin: 0.2rem 0;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  div li {
+    list-style: none;
+    font-size: 1.2rem;
+  }
+</style>
